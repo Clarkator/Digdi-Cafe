@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digdi Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #f8f1e9;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .landing-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
+                        url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            color: #6F4E37;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        .choice-buttons {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn-large {
+            padding: 1.5rem 3rem;
+            font-size: 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .btn-large:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        @media (max-width: 768px) {
+            .choice-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .btn-large {
+                padding: 1rem 2rem;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <h1>Welcome to Digdi Cafe</h1>
+        <div class="choice-buttons">
+            <a href="customer.html" class="btn btn-large" style="background-color: #6F4E37; color: white;">I'm a Customer</a>
+            <a href="worker.html" class="btn btn-large" style="background-color: #8B5A2B; color: white;">I'm a Worker</a>
+        </div>
+    </div>
+</body>
+</html>
